@@ -5,7 +5,6 @@
 <title>review</title>
 <link href="css/settings-style.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
-<script src="js/quiz.js"></script>
 </head>
 
 <body>
@@ -18,7 +17,7 @@ function goBack() {
 }
 </script>
 <div id="search" class="icon"></div>
-<a id="burger" class="icon" onclick="openNav()"></a> 
+<a id="burger" class="icon" onclick="openNav()"></a>
 <script>
 function openNav() {
     document.getElementById("mySidenav").style.height = "100%";
@@ -27,39 +26,15 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.height = "0";
 }
-</script> 
+</script>
 
-<!--/*CONTENT*/--> 
-
+<!--/*CONTENT*/-->
 
 <div id="p1">
-  <h1>Quiz 1</h1>
-  <p>
-  <form name="quiz">
-    <p> <b>A motorcyclist is thrown from his bike and is unconscious in the field. In the trauma room he withdraws all four extremities to pain and mumbles unintelligibly. On exam, he is noted to have left post-auricular ecchymosis and his left ear appears to be glistening with some moisture.<br>
-      </b>
-    <blockquote>
-      <input type="radio" name="q1" value="A. C2 Fracture">
-      A. C2 Fracture<br>
-      <input type="radio" name="q1" value="B. A depressed skull fracture">
-      B. A depressed skull fracture<br>
-      <input type="radio" name="q1" value="C. An epidural hemorrhage">
-      C. An epidural hemorrhage<br>
-    </blockquote>
-    <p>
-    <b>
-    <input type="button" value="Get score" onClick="getScore(this.form)">
-    <input type="reset" value="Clear">
-    <p> Score =
-      <input type=text size=15 name="percentage">
-      <br>
-      Correct answers:<br>
-      </font>
-      <textarea name="solutions" wrap="virtual" rows="4" cols="25"></textarea>
-  </form>
-  <p> 
-</div>
-
+	<h1>Statistics</h1>
+	</div>
+	
+	
 <!--/*CONTENT*/-->
 
 <div id="mySidenav" class="sidenav"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id="close-button">&times;</a>
@@ -73,6 +48,7 @@ function closeNav() {
       <input type="checkbox" >
       <span class="slider round"></span> </label>
   </div>
+ 
   </a>
   <div id="line2" class="line"></div>
   <a href="#" id="note-settings" class="category">Notifications</a>
@@ -88,5 +64,7 @@ function closeNav() {
   <div id="quiz" class=".icon2" href="quiz.html"><a id="quiz-button" href="quiz.html">Quiz</a></div>
   <div id="review" class="icon2"href="enc.html"><a id="quiz-button" href="enc.html">Encyclopedia</a></div>
 </div>
+
+
 </body>
 </html>

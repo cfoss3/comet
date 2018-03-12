@@ -1,0 +1,71 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html, body{ margin:0; padding:0;
+font-family: 'Roboto', sans-serif;}
+
+#homescreen-background{
+	height: 100vh;
+	width:100vw;
+	padding: 0px 0px 0px 0px;
+	margin: -10;
+	background-repeat:repeat-x;
+	background: linear-gradient(#8C55FF, #6AC1FF);
+	position:fixed;
+}
+
+#homescreen-logo {
+	background-image: url(../img/homescreen-logo.svg);
+	width: 80vw;
+	height: 20vw;
+	background-repeat: no-repeat;
+	margin-right: auto;
+	margin-left:auto;
+	margin-top: 40vw;
+}
+
+#homescreen-email-login{
+	width: 70vw;
+	height: 11vw;
+	border-radius: 6vw;
+	border-style: solid;
+	background: white;
+	margin-right: auto;
+	margin-left:auto;
+	margin-top: 5vw;
+	border-width: thin;
+}
+
+#homescreen-password-login{
+	width: 70vw;
+	height: 11vw;
+	border-radius: 6vw;
+	border-style: solid;
+	background: white;
+	margin-right: auto;
+	margin-left:auto;
+	margin-top: 5vw;
+	border-width: thin;
+}
+
+#homescreen-login-button{
+	height:40px;
+	width: 100px;
+	font-size:30px;
+	margin-right:auto;
+	margin-left:auto;
+	text-align: center;
+	color:white;
+	margin-top: 8vw;
+}
+
+#homescreen-sign-up-button{
+	height:100px;
+	width: 120px;
+	font-size:30px;
+	margin-right: auto;
+	margin-left:auto;
+	text-align: center;
+	color:white;
+	margin-top: 8vw;
+}
