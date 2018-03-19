@@ -5,7 +5,9 @@ html, body {
 	background-color: #F2F2F2;
 	margin: 0;
 	padding: 0;
+
 }
+
 #header {
 	width: 100%;
 	height: 50px;
@@ -48,6 +50,7 @@ html, body {
 	text-decoration: none;
 }
 #p1 {
+	font-weight: normal;
 	margin-right: 20px;
 	margin-left: 20px;
 	margin-top: 20px;

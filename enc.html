@@ -17,7 +17,7 @@ function goBack() {
 }
 </script>
 <div id="search" class="icon"></div>
-<a id="burger" class="icon" onclick="openNav()"></a>
+<a id="burger" class="icon" onclick="openNav()"></a> 
 <script>
 function openNav() {
     document.getElementById("mySidenav").style.height = "100%";
@@ -26,84 +26,55 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.height = "0";
 }
-</script>
+</script> 
 
 <!--/*CONTENT*/-->
 
-<div id="p1">
-	<div id="Acute-Care" class="category">
-  <h1>Surgical Byte, Head Trauma: Cerebral Contusion and Epidural Hematomas</h1>
-  <h2>Terms</h2>
-  <ul class="list-group">
-    <li>subarachnoid hemorrhage (SAH)</li>
-    <li>subdural hemorrhage (SDH)</li>
-    <li>epidural hemorrhage (EDH), </li>
-    <li>intraparenchymal hemorrhage (IPH) </li>
-    <li>diffuse axonal injury (DAI)</li>
-  </ul>
-  <h3>Epidemiology</h3>
-  <p>Approximately 1.4 million people per year suffer traumatic brain injury(TBI). Of these patients, approximately 1.1 million are treated and released, 240,000 are hospitalized, and 50,000 die. TBI has a bimodal age distribution with the greatest risk in 0–4 and 15- to 19-year-olds. Males have 1.5 times the risk of females.</p>
-  <h3>Presentation on exam</h3>
-  <p>Raccoon’s eyes (periorbital ecchymosis),  Battle’s sign (postauricular ecchymosis), and otorrhea/rhinorrhea suggest a basilar skull fracture. </p>
-  <h2>Assessment by Glasgow Coma Scale 15 points </h2>
-  <ul class="list-group">
-    <li>based on motor 6 points</li>
-    <li>best verbalization 5 points</li>
-    <li>best eye opening 4 points</li>
-  </ul>
-  <h3>Diagnostics</h3>
-  <p>CT scan indicated if post-traumatic GCS ≤14, focal deficit, amnesia for the injury, signs of basilar skull fracture. MRI not recommended in trauma since limited availability, slower image acquisition time and increased cost for no greater information.</p>
-  <h3>Cerebral Contusion</h3>
-  <p>Contusion can occur from an external force causing the skull/skull fragments to strike the brain (sledge hammer) or through deceleration injury, where the brain continues to move toward the rapidly decelerating skull (ie, MVA). “Coup” lesions are ipsilateral to the impact site and can be associated with adjacent skull fractures.</p>
-  <h2>Contusions</h2>
-  <ul class="list-group">
-    <li>50% temporal lobes</li>
-    <li>30% frontal lobes</li>
-    <li>25% parasaggital but 90% 
-      with multiple or bilateral locations.</li>
-  </ul>
-  <p>On CT scans, contusions are patchy, hyperdense lesions with a hypodense background. Often associated with intraparenchymal hemorrhage.
-  <h2>Epidural Hemorrhage</h2>
-  <p>Blood collects in the space between the dura and inner table of the skull. It is seen in 1% of all head trauma admissions and in 5–15% of patients with fatal head injuries. Ninety percent are due to arterial bleeding following a fracture at the middle meningeal artery groove, and 10% are due to venous bleeding.</p>
-  The classic clinical presentation is
-  <ol>
-    <li>A brief post-traumatic loss of consciousness (LOC) followed by</li>
-    <li>A lucid interval, of varying duration,</li>
-    <li>Proceeding to obtundation, contralateral hemiparesis, and ipsilateral pupillary dilatation.
-      Surgical evacuation should be performed if >30 cm2, comatose, or anisocoria. </li>
-  </ol>
-  
-	<h2>Question 1 </h2> 
-	<p>A motorcyclist is thrown from his bike and is unconscious in the field. In the trauma room he withdraws all four extremities to pain and mumbles unintelligibly. On exam, he is noted to have left post-auricular ecchymosis and his left ear appears to be glistening with some moisture.</p>  
+<div id="p1"> 
+  <script>
 
-	<h3>He is most likely to have:</h3>
-<p>A.	C2 Fracture<br>
-B.	A depressed skull fracture<br>
-	C.	An epidural hemorrhage</p>
-	
-<img src="img/brain.jpg" alt="Scan" width="360" height="510">
- 
-	<h3>Discussion</h3>
-	<p>Temporal fractures may manifest with a CSF leakage from ear canal (otorrhea) and bruises on the mastoid processes (Battle sign), whereas anterior variants may show characteristic hematomas around the eyes (raccoon eyes) and CSF rhinorrhea. </p>
+    var xhr = new XMLHttpRequest();
+    // Create XMLHttpRequest object
 
-	<p>Occipital condylar fracture has a much more severe course [9], usually resulting in coma. Condylar fractures are also associated with co-occurring cervical spine injuries potentially causing hemiplegia or quadriplegia. The injury of IX, X, XI, and XII cranial nerves with occipital condylar fracture is referred to as Collet-Sicard syndrome.</p>
-	
-	<h3>Treatment</h3>
-	<p>All patients with basilar skull fractures need to be immediate hospitalization as serious life-threatening complication could arise and require immediate management. Intracranial hemorrhages is an example of such surgical emergency.</p>
+    xhr.overrideMimeType("application/json");
 
-	<p>The CFS leaks, although usually resolve spontaneously in a time of one week, may pose a risk for development of meningitis. The risk for meningitisis reported to be approximately 3% during the first week of admission. Studies suggest that antibiotic prophylaxis is not sufficiently effective in prevention of meningitis in patients with basilar skull fractures in the first seven days, however, may provide a benefit if the leakage continues past the first week [15].</p>
+    xhr.open('GET', 'http://parsec.evl.uic.edu:8080/api/bytes/id/23', true);
+    // Prepare the request
 
-	<p>Cranial nerve deficits due to compression or contusion usually have delayed presentation and may resolve with glucocorticoids treatment, however, the research data supporting such management is not sufficient at the time. The treatment strategies of the nontraumatic neurological deficits such as Bell’s palsy may be applied in the cases of basilar skull fracture. Facial nerve deficits caused by nerve transection are not recoverable and will not respond to corticosteroids.</p>
-	
-	<br>
-  
-	<h3>Prognosis</h3>
-Stable fractures without displacement may heal spontaneously. However, a couple of complications may arise following the course of the disease. Patients are particularly prone to meningitis with antibiotic prophylaxis showing questionable efficacy.
+    xhr.onload = function() {                       // When readystate changes
+      // The following conditional check will not work locally - only on a server
+      if(xhr.status === 200) {                      // If server status was ok
+        var responseObject = JSON.parse(xhr.responseText);
 
+        //log the json output
+        console.log('response', responseObject)
+
+        // BUILD UP STRING WITH NEW CONTENT (could also use DOM manipulation)
+        var newContent = '';
+        for (var i = 0; i < responseObject.length; i++) { // Loop through object
+        newContent += '<div class="event">';
+        /*newContent += responseObject[i].title;*/
+        /*newContent += '<br /><br />'+responseObject[i].caption;*/
+		newContent += '<br /><br />'+responseObject[i].epidemiology;
+		newContent += '<br /><br />'+responseObject[i].presentation_on_exam;
+		newContent += '<br /><br />'+responseObject[i].diagnostics;
+		newContent += '<br /><br />'+responseObject[i].clinical_presentation;
+			
+          newContent += '</div>';
+        }
+        // Update the page with the new content
+        document.getElementById('content').innerHTML = newContent;
+            }
+    };
+    xhr.send(null);                                 // Send the request
+
+    </script>
+  <header>
+    <h1>Head Trauma: Cerebral Contusion and Epidural Hematomas</h1>
+  </header>
+  <section id="content"></section>
 </div>
-	</div>
-	
-	
+
 <!--/*CONTENT*/-->
 
 <div id="mySidenav" class="sidenav"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id="close-button">&times;</a>
@@ -117,7 +88,6 @@ Stable fractures without displacement may heal spontaneously. However, a couple 
       <input type="checkbox" >
       <span class="slider round"></span> </label>
   </div>
- 
   </a>
   <div id="line2" class="line"></div>
   <a href="#" id="note-settings" class="category">Notifications</a>
@@ -133,7 +103,5 @@ Stable fractures without displacement may heal spontaneously. However, a couple 
   <div id="quiz" class=".icon2" href="quiz.html"><a id="quiz-button" href="quiz.html">Quiz</a></div>
   <div id="review" class="icon2"href="enc.html"><a id="quiz-button" href="enc.html">Encyclopedia</a></div>
 </div>
-
-
 </body>
 </html>

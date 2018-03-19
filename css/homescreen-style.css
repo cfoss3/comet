@@ -1,0 +1,535 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html, body{ margin:0; padding:0;
+font-family: 'Roboto', sans-serif;}
+
+#homescreen-background{
+	height: 100vh;
+	width:100vw;
+	padding: 0px 0px 0px 0px;
+	margin: -10;
+	background-repeat:repeat-x;
+	background: linear-gradient(#8C55FF, #6AC1FF);
+	position:fixed;
+}
+
+#homescreen-logo {
+	background-image: url(../img/homescreen-logo.svg);
+	width: 80vw;
+	height: 20vw;
+	background-repeat: no-repeat;
+	margin-right: auto;
+	margin-left:auto;
+	margin-top: 40vw;
+}
+
+#homescreen-email-login{
+	width: 70vw;
+	height: 11vw;
+	border-radius: 6vw;
+	border-style: solid;
+	background: white;
+	margin-right: auto;
+	margin-left:auto;
+	margin-top: 5vw;
+	border-width: thin;
+}
+
+#homescreen-password-login{
+	width: 70vw;
+	height: 11vw;
+	border-radius: 6vw;
+	border-style: solid;
+	background: white;
+	margin-right: auto;
+	margin-left:auto;
+	margin-top: 5vw;
+	border-width: thin;
+}
+
+#homescreen-login-button{
+	height:40px;
+	width: 100px;
+	font-size:30px;
+	margin-right:auto;
+	margin-left:auto;
+	text-align: center;
+	color:white;
+	margin-top: 8vw;
+}
+
+#homescreen-sign-up-button{
+	height:100px;
+	width: 120px;
+	font-size:30px;
+	margin-right: auto;
+	margin-left:auto;
+	text-align: center;
+	color:white;
+	margin-top: 8vw;
+}
+
+html, body {
+	font-family: 'Roboto', sans-serif;
+background-color:#F2F2F2;
+	margin: 0;
+		padding:0;
+}
+#header {
+	width:100%;
+	height:50px;
+	background-color: #FFFFFF;
+	position: fixed;
+	top:0;
+	left:0;
+	box-shadow: 0 0 5px 1px black;
+
+
+}
+#header2 {
+	width:100%;
+	height:50px;
+	background-color: #FFFFFF;
+	top:0;
+	left:0;
+
+}
+#header-space {
+	height:50px;
+	width: 100%;
+}
+#footer-space {
+	height:70px;
+	width: 100%;
+}
+#footer {
+	width:100%;
+	height:50px;
+	background-color:#FFFFFF;
+	position: fixed;
+	bottom:0;
+	left:0;
+		box-shadow: 0 0 5px 1px black;
+
+}
+
+.category {
+	width: 100%;
+	height: 60px;
+		font-size: 18px;
+		font-weight:700;
+	text-decoration: none;
+
+	
+
+}
+
+.line {
+	width:100%;
+	height: 2px;
+	margin-top: 5px;
+	
+}
+
+#arrow1 {
+	background-image: url(../img/line1.svg);
+	background-size: cover;
+	margin-right: 0px;
+	margin-left: auto;
+	margin-top:10px;
+	margin-bottom: 12px;
+	height:53px;
+	width:53px;
+	
+}
+#arrow2 {
+	background-size: cover;
+	margin-right: 0px;
+	margin-left: auto;
+	margin-top:10px;
+	margin-bottom: 12px;
+	height:53px;
+	width:53px;
+}
+#arrow3 {
+	background-image: url(../img/line3.svg);
+	background-size: cover;
+	margin-right: 0px;
+	margin-left: auto;
+	margin-top:10px;
+	margin-bottom: 12px;
+	height:53px;
+	width:53px;
+	
+}
+#arrow4 {
+	background-image: url(../img/line4.svg);
+	background-size: cover;
+	margin-right: 0px;
+	margin-left: auto;
+	margin-top:10px;
+	margin-bottom: 12px;
+	height:53px;
+	width:53px;
+}
+#arrow5 {
+	background-image: url(../img/line5.svg);
+	background-size: cover;
+	margin-right: 0px;
+	margin-left: auto;
+	margin-top:10px;
+	margin-bottom: 12px;
+	height:53px;
+	width:53px;
+}
+#arrow6 {
+	background-image: url(../img/line6.svg);
+	background-size: cover;
+	margin-right: 0px;
+	margin-left: auto;
+	margin-top:10px;
+	margin-bottom: 12px;
+	height:53px;
+	width:53px;
+	
+	
+}
+#Account {
+	color:#A43FC8;	
+}
+#line1 {
+	background-color: #A43FC8
+}
+
+#text-to-speech {
+	color:#BC2A91;
+}
+#line2 {
+	background-color: #BC2A91;
+}
+
+#notifications {
+	color:#D4155A;
+}
+#line3 {
+	background-color: #D4155A;
+}
+#connect {
+	color:#E03E46;
+}
+#line4 {
+	background-color: #E03E46;
+}
+#Head-and-Neck {
+	color:#E34145;
+}
+#line5 {
+	background-color: #E34145;
+}
+
+#Hepatopancreaticobiliary {
+	color:#F7921E;
+}
+#line6 {
+	background-color: #F7921E;
+}
+.icon {
+	height:50px;
+	width: 50px;
+	background-size: cover;
+	position: fixed;
+	top: 0;
+}
+.icon2 {
+	height:50px;
+	width: 50px;
+	background-size: cover;
+	position: fixed;
+	bottom: 0;
+	margin-top: -50px;
+	margin-left:-50px;
+	
+}
+
+#back {
+	background-image: url(../img/back.svg);
+	left: 0;
+}
+
+#search {
+	background-image: url(../img/search.svg);
+	right: 50px;
+}
+#burger {
+	background-image: url(../img/filter.svg);
+	right: 5px;
+	
+}
+#exit {
+	background-image: url(../img/cross.svg);
+	right: -50px;
+}
+	
+#stat {
+	background-image: url(../img/stats.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: auto;
+	margin-left: 20%;
+	width: 40px;
+	height:40px;
+	position: relative;
+	margin-top:7px;
+
+}
+#quiz {
+	background-image: url(../img/quiz.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: auto;
+	margin-left: auto;
+	width: 40px;
+	height:40px;
+	position: relative;
+		margin-top:-40px;
+
+
+}
+#quiz-button{
+color: white;
+	opacity: 0;
+		margin-right: auto;
+	margin-left: auto;
+	text-align:center;
+}
+#review {
+	background-image: url(../img/review.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 20%;
+	margin-left: auto;
+	width: 40px;
+	height:40px;
+	position: relative;
+	margin-top:-40px;
+
+}
+
+.cat-text {
+	margin-top:-50px;
+	margin-bottom: 22px;
+	margin-left: 10px;
+}
+
+
+.sidenav {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 0px;
+    text-align:center;
+	background-color:#F2F2F2;
+
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 10px;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+	text-align: left;
+	margin-top:17px;
+	margin-bottom: -30px;
+	
+
+}
+
+.sidenav a:hover{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: -42.5px;
+    right: 2px;
+    font-size: 70px;
+}
+#close-button {
+	color: black;
+}
+#settings-header{
+	width:10px;
+	height:10px;
+	
+}
+
+#checkBox {
+	height:40px;
+	transform: scale(3.5);
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #BC2A91;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+#account-settings {
+	color: #A43FC8;
+}
+
+#text-settings {
+	color: #BC2A91;
+}
+
+#note-settings {
+	color: #D4155A;
+}
+
+#connect-settings {
+	color: #E03E46;
+}
+#switch-settings{
+		float: right;
+margin-top:-8px;
+	margin-right:20px;
+}
+
+#arrow1-settings {
+	background-image: url(../img/line1.svg);
+	background-size: contain;
+	height:53px;
+	width:53px;
+	float: right;
+	margin-top:-53px;
+
+}
+
+#arrow3-settings {
+	background-image: url(../img/line3.svg);
+	background-size: contain;
+	height:53px;
+	width:53px;
+	float: right;
+	margin-top:-53px;
+
+}
+
+#arrow4-settings {
+	background-image: url(../img/line4.svg);
+	background-size: contain;
+	height:53px;
+	width:53px;
+	float: right;
+	margin-top:-53px;
+
+}
+#screen-level-0{
+    background-color: #13022B;
+	width: 100%;
+	height: 100vh;
+}
+#screen-level-1{
+    background: linear-gradient(#13022B, #3D0830);
+	width: 100%;
+	height: 100vh;
+}
+#screen-level-2{
+    background: linear-gradient(#3D0830, #670D35);
+	width: 100%;
+	height: 100vh;
+}
+
+#screen-level-3{
+    background: linear-gradient(#670D35, #91133A);
+	width: 100%;
+	height: 100vh;
+}
+
+#screen-level-4{
+    background: linear-gradient(#91133A, #B63927);
+	width: 100%;
+	height: 100vh;
+}
+
+#screen-level-5{
+    background: linear-gradient(#B63927, #DA5F13);
+	width: 100%;
+	height: 100vh;
+}
+#screen-level-6{
+    background: linear-gradient(#DA5F13, #FF8500);
+	width: 100%;
+	height: 100vh;
+}
+#screen-level-7{
+    background-color: #FF8500;
+	width: 100%;
+	height: 100vh;
+}
+
+#stars {
+	width:100vw;
+	height:800vh;
+	background-image:url(../img/stars.png);
+		position: absolute;
+	background-size: 100vw;
+}
