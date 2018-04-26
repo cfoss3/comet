@@ -2,7 +2,10 @@
 /* CSS Document */
 
 html, body{ margin:0; padding:0;
-font-family: 'Roboto', sans-serif;}
+font-family: 'Roboto', sans-serif;
+	overflow:auto;
+
+}
 
 #homescreen-background{
 	height: 100vh;
@@ -482,54 +485,402 @@ margin-top:-8px;
 	margin-top:-53px;
 
 }
-#screen-level-0{
-    background-color: #13022B;
-	width: 100%;
-	height: 100vh;
-}
-#screen-level-1{
-    background: linear-gradient(#13022B, #3D0830);
-	width: 100%;
-	height: 100vh;
-}
-#screen-level-2{
-    background: linear-gradient(#3D0830, #670D35);
-	width: 100%;
-	height: 100vh;
-}
-
-#screen-level-3{
-    background: linear-gradient(#670D35, #91133A);
-	width: 100%;
-	height: 100vh;
-}
-
-#screen-level-4{
-    background: linear-gradient(#91133A, #B63927);
-	width: 100%;
-	height: 100vh;
-}
-
-#screen-level-5{
-    background: linear-gradient(#B63927, #DA5F13);
-	width: 100%;
-	height: 100vh;
-}
-#screen-level-6{
-    background: linear-gradient(#DA5F13, #FF8500);
-	width: 100%;
-	height: 100vh;
-}
-#screen-level-7{
-    background-color: #FF8500;
-	width: 100%;
-	height: 100vh;
-}
 
 #stars {
 	width:100vw;
 	height:800vh;
 	background-image:url(../img/stars.png);
-		position: absolute;
+	position: absolute;
 	background-size: 100vw;
+	top: 0;
+		
 }
+
+.screen-level{
+width: 100%;
+	height: 100vh;
+position: relative;
+}
+#screen-level-0{
+    background-color: #13022B;
+	
+
+}
+#screen-level-1{
+    background: linear-gradient(#13022B, #3D0830);
+	
+}
+#screen-level-2{
+    background: linear-gradient(#3D0830, #670D35);
+
+
+}
+
+#screen-level-3{
+    background: linear-gradient(#670D35, #91133A);
+
+
+}
+
+#screen-level-4{
+    background: linear-gradient(#91133A, #B63927);
+	
+
+}
+
+#screen-level-5{
+    background: linear-gradient(#B63927, #DA5F13);
+
+
+}
+#screen-level-6{
+    background: linear-gradient(#DA5F13, #FF8500);
+
+
+}
+#screen-level-7{
+    background-color: #FF8500;
+
+}
+
+
+		
+
+.star-button{
+	width: 20vw;
+	height: 20vw;
+	background: rgba(255, 255, 255, 0.15);
+	opacity: 0.5;
+	border-radius: 100%;
+	border: 5px solid #BCBCBC;
+	position:absolute;
+	
+}
+.star-button-active{
+	width: 20vw;
+	height: 20vw;
+	background: rgba(255, 255, 255, 0.15);
+	border-radius: 100%;
+	border: 5px solid white;
+	position:absolute;
+	
+}
+.star-button-complete{
+	width: 20vw;
+	height: 20vw;
+	background: rgba(89, 190, 204, 0.6);
+	border-radius: 100%;
+	border: 5px solid white;
+	position:absolute;
+	
+}
+
+#line-1{
+	width:31vw;
+	border: 3px solid white;
+	position:absolute;
+	left: 27.7vw;
+	top:45vw;
+	background-color:white;
+	
+	-ms-transform: rotate(35deg); /* IE 9 */
+    -webkit-transform: rotate(35deg); /* Safari */
+    transform: rotate(34deg); /* Standard syntax */
+}
+#star-button-1{
+	left: 10vw;
+	top:20vw;
+	
+}
+#star-button-2{
+	left: 55vw;
+	top:50vw;
+}
+
+#star-button-3{
+	left: 20vw;
+	top:90vw;
+}
+#star-button-4{
+	left: 60vw;
+	top:110vw;
+}
+#star-button-5{
+	left: 15vw;
+	top:135vw;
+}
+
+#star-button-6{
+	left: 45vw;
+	top:16vw;
+}
+
+#star-button-7{
+	left: 65vw;
+	top:40vw;
+}
+#star-button-8{
+	left: 35vw;
+	top:80vw;
+}
+#star-button-9{
+	left: 7vw;
+	top:100vw;
+}
+#star-button-10{
+	left: 57vw;
+	top:130vw;
+}
+
+#star-button-11{
+	left: 55vw;
+	top:20vw;
+	
+}
+#star-button-12{
+	left: 7vw;
+	top:55vw;
+}
+
+#star-button-13{
+	left: 25vw;
+	top:85vw;
+}
+#star-button-14{
+	left:65vw;
+	top:100vw;
+}
+#star-button-15{
+	left: 30vw;
+	top:135vw;
+}
+
+#star-button-16{
+	left: 5vw;
+	top:25vw;
+}
+
+#star-button-17{
+	left: 55vw;
+	top:45vw;
+}
+#star-button-18{
+	left: 10vw;
+	top:75vw;
+}
+#star-button-19{
+	left: 55vw;
+	top: 100vw;
+}
+#star-button-20{
+	left: 30vw;
+	top:130vw;
+}
+#star-button-21{
+	left: 30vw;
+	top:25vw;
+	
+}
+#star-button-22{
+	left: 10vw;
+	top:50vw;
+}
+
+#star-button-23{
+	left: 22vw;
+	top:85vw;
+}
+#star-button-24{
+	left: 50vw;
+	top:100vw;
+}
+#star-button-25{
+	left: 25vw;
+	top:135vw;
+}
+
+#star-button-26{
+	left: 65vw;
+	top:19vw;
+}
+
+#star-button-27{
+	left: 45vw;
+	top:50vw;
+}
+#star-button-28{
+	left: 5vw;
+	top:80vw;
+}
+#star-button-29{
+	left: 65vw;
+	top: 95vw;
+}
+#star-button-30{
+	left: 27vw;
+	top:130vw;
+}
+
+#star-button-31{
+	left: 25vw;
+	top:25vw;
+	
+}
+#star-button-32{
+	left: 5vw;
+	top:55vw;
+}
+
+#star-button-33{
+	left: 45vw;
+	top:75vw;
+}
+#star-button-34{
+	left:60vw;
+	top:105vw;
+}
+#star-button-35{
+	left: 25vw;
+	top:135vw;
+}
+
+#star-button-36{
+	left: 55vw;
+	top:25vw;
+}
+
+#star-button-37{
+	left: 5vw;
+	top:45vw;
+}
+#star-button-38{
+	left: 40vw;
+	top:75vw;
+}
+#star-button-39{
+	left: 15vw;
+	top: 105vw;
+}
+#star-button-40{
+	left: 55vw;
+	top:135vw;
+}
+#button-level{
+	position:absolute;
+	top: 0;
+}
+.button-level{
+width: 100vw;
+	height: 100vh;
+	position: relative;
+}
+#button-level-0{
+	  scroll-behavior: smooth;
+
+}
+#gradient-level{
+	position:relative;
+}
+
+#bar1{
+	width:30px;
+	height:12.5vh;
+	position:fixed;
+	background-color:#13022B;
+	top: 0;
+	right:0;
+	border-left: 3px solid white;
+	border-top: 3px solid white;
+	border-bottom: 3px solid white;
+
+
+}
+#bar2{
+	width:30px;
+	height:12.5vh;
+	position:fixed;
+	background-color:#3D0830;
+	top:12.5vh;
+	right:0;
+border-left: 3px solid white;
+	border-top: 3px solid white;
+	border-bottom: 3px solid white;
+} 
+#bar3{
+	width:30px;
+	height:12.5vh;
+	position:fixed;
+	background-color:#670D35;
+	top:25vh;
+	right:0;
+border-left: 3px solid white;
+	border-top: 3px solid white;
+	border-bottom: 3px solid white;
+} 
+#bar4{
+	width:30px;
+	height:12.5vh;
+	position:fixed;
+	background-color:#91133A;
+	top:37.5vh;
+	right:0;
+border-left: 3px solid white;
+	border-top: 3px solid white;
+	border-bottom: 3px solid white;
+} 
+#bar5{
+	width:30px;
+	height:12.5vh;
+	position:fixed;
+	background-color:#B63927;
+	bottom:37.5vh;
+	right:0;
+border-left: 3px solid white;
+	border-top: 3px solid white;
+	border-bottom: 3px solid white;
+} 
+#bar6{
+	width:30px;
+	height:12.5vh;
+	position:fixed;
+	background-color:#DA5F13;
+	bottom:25vh;
+	right:0;
+border-left: 3px solid white;
+	border-top: 3px solid white;
+	border-bottom: 3px solid white;
+}
+#bar7{
+	width:30px;
+	height:12.5vh;
+	position:fixed;
+	background-color:#FF8500;
+	bottom:12.5vh;
+	right:0;
+border-left: 3px solid white;
+	border-top: 3px solid white;
+	border-bottom: 3px solid white;
+}
+#bar8{
+	width:30px;
+	height:12.5vh;
+	position:fixed;
+	background-color:#FFAA00;
+	bottom:0;
+	right:0;
+	border-left: 3px solid white;
+	border-top: 3px solid white;
+	border-bottom: 3px solid white;}
+
+#bar-shadow{
+	width:30px;
+	height:100vh;
+	position:fixed;
+	background-color:black;
+	right:0;
+	top:0;
+	box-shadow: 0 0 5px 1px black;
+
+}
+
+
