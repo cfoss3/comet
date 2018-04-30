@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+<<<<<<< HEAD
   <head>
   <meta charset="UTF-8">
   <title>HOME</title>
@@ -7,10 +8,20 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="../lib/jquery/jquery.js"></script>
+=======
+<head>
+<meta charset="UTF-8">
+<title>review</title>
+<link href="css/homescreen-style.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+	<script src="js/jquery-3.3.1.min.js"></script>
+<script src="../lib/jquery/jquery.js"></script>
+>>>>>>> cba5d36b2c50cf650dd7a26c5807f69689c96c5b
   <script src="../src/jquery.smooth-scroll.js"></script>
   <script src="../lib/jquery.ba-bbq.js"></script>
   <script>
     $(document).ready(function() {
+<<<<<<< HEAD
 
       $(document).on('click', 'a[href*="#"]', function() {
         var slashedHash = '#/' + this.hash.slice(1);
@@ -128,6 +139,160 @@
   <div id="bar1"></div>
   </a> 
 <script>
+=======
+
+      $(document).on('click', 'a[href*="#"]', function() {
+        var slashedHash = '#/' + this.hash.slice(1);
+        if ( this.hash ) {
+
+          if ( slashedHash === location.hash ) {
+            $.smoothScroll({scrollTarget: this.hash});
+          } else {
+            $.bbq.pushState(slashedHash);
+          }
+
+          return false;
+        }
+      });
+
+      $(window).bind('hashchange', function(event) {
+        var tgt = location.hash.replace(/^#\/?/,'');
+        if ( document.getElementById(tgt) ) {
+          $.smoothScroll({scrollTarget: '#' + tgt});
+        }
+      });
+
+      $(window).trigger('hashchange');
+    });
+  </script>
+
+
+	</head>
+
+<body>
+
+	
+<div id="gradient-level">
+	<div class="screen-level" id="screen-level-0">
+	
+	</div>
+	<div class="screen-level" id="screen-level-1">
+	
+	</div>
+	<div class="screen-level" id="screen-level-2">
+	
+	</div>
+	<div class="screen-level" id="screen-level-3">
+	
+	</div>
+	<div class="screen-level" id="screen-level-4">
+	
+	</div>
+	<div class="screen-level" id="screen-level-5">
+	
+	</div>
+	<div class="screen-level" id="screen-level-6">
+	
+	</div>
+	<div class="screen-level" id="screen-level-7">
+	
+	</div>
+</div>
+
+	<div id="stars"></div>
+<div id="button-level">
+	<div class="button-level" id="button-level-0" class="scroll">
+			<div class="star-button-complete" id="star-button-1"></div>
+		<div id="line-1"></div>
+			<a class="star-button-active" id="star-button-2" href="enc.html"></a>
+			<div class="star-button" id="star-button-3"></div>
+			<div class="star-button" id="star-button-4"></div>
+			<div class="star-button" id="star-button-5"></div>
+		
+	</div>
+	<div class="button-level" id="button-level-1">
+	
+		
+		<div class="star-button" id="star-button-6"></div>
+			<div class="star-button" id="star-button-7"></div>
+			<div class="star-button" id="star-button-8"></div>
+			<div class="star-button" id="star-button-9"></div>
+			<div class="star-button" id="star-button-10"></div>
+		
+	</div>
+	<div class="button-level" id="button-level-2">
+	
+		<div class="star-button" id="star-button-11"></div>
+			<div class="star-button" id="star-button-12"></div>
+			<div class="star-button" id="star-button-13"></div>
+			<div class="star-button" id="star-button-14"></div>
+			<div class="star-button" id="star-button-15"></div>
+		
+	</div>
+	<div class="button-level" id="button-level-3">
+	
+			<div class="star-button" id="star-button-16"></div>
+			<div class="star-button" id="star-button-17"></div>
+			<div class="star-button" id="star-button-18"></div>
+			<div class="star-button" id="star-button-19"></div>
+			<div class="star-button" id="star-button-20"></div>
+		
+	</div>
+	<div class="button-level" id="button-level-4">
+	
+		<div class="star-button" id="star-button-21"></div>
+			<div class="star-button" id="star-button-22"></div>
+			<div class="star-button" id="star-button-23"></div>
+			<div class="star-button" id="star-button-24"></div>
+			<div class="star-button" id="star-button-25"></div>
+		
+	</div>
+	<div class="button-level" id="button-level-5">
+	
+		<div class="star-button" id="star-button-26"></div>
+			<div class="star-button" id="star-button-27"></div>
+			<div class="star-button" id="star-button-28"></div>
+			<div class="star-button" id="star-button-29"></div>
+			<div class="star-button" id="star-button-30"></div>
+		
+	</div>
+	<div class="button-level" id="button-level-6">
+	
+		<div class="star-button" id="star-button-31"></div>
+			<div class="star-button" id="star-button-32"></div>
+			<div class="star-button" id="star-button-33"></div>
+			<div class="star-button" id="star-button-34"></div>
+			<div class="star-button" id="star-button-35"></div>
+		
+	</div>
+	<div class="button-level" id="button-level-7">
+	
+		<div class="star-button" id="star-button-36"></div>
+			<div class="star-button" id="star-button-37"></div>
+			<div class="star-button" id="star-button-38"></div>
+			<div class="star-button" id="star-button-39"></div>
+			<div class="star-button" id="star-button-40"></div>
+		
+	</div>
+	</div>
+	<div id="bar-shadow"></div>
+<a class="scroll" href="#button-level-3"><div id="bar4"></div></a>
+<a class="scroll" href="#button-level-4"><div id="bar5"></div></a>
+<a class="scroll" href="#button-level-5"><div id="bar6"></div></a>	
+<a class="scroll" href="#button-level-6"><div id="bar7"></div></a>
+
+
+<a class="scroll" href="#button-level-7"><div id="bar8"></div></a>
+
+
+<a class="scroll" href="#button-level-2"><div id="bar3"></div></a>
+	
+<a class="scroll" href="#button-level-1"><div id="bar2"></div></a>
+		
+<a class="scroll" href="#button-level-0"><div id="bar1"></div></a>
+
+	<script>
+>>>>>>> cba5d36b2c50cf650dd7a26c5807f69689c96c5b
 function openNav() {
     document.getElementById("mySidenav").style.height = "100%";
 }
@@ -182,9 +347,18 @@ function goBack() {
 }
 </script> <a id="burger" class="icon" onclick="openNav(); hideandseek()"></a> <a id="exit" class="icon" onclick="closeNav(); seekandhide()"></a>
 <div id="footer">
+<<<<<<< HEAD
     <div id="stat" class=".icon2" href="stats.html"><a id="quiz-button" href="stats.html">Statistics</a></div>
     <div id="quiz" class=".icon2" href="quiz.html"><a id="quiz-button" href="quiz.html">Quiz</a></div>
     <div id="review" class="icon2"href="enc.html"><a id="quiz-button" href="review.html">Encyclopedia</a></div>
   </div>
+=======
+  <div id="stat" class=".icon2" href="stats.html"><a id="quiz-button" href="stats.html">Statistics</a></div>
+  <div id="quiz" class=".icon2" href="quiz.html"><a id="quiz-button" href="quiz.html">Quiz</a></div>
+  <div id="review" class="icon2"href="enc.html"><a id="quiz-button" href="review.html">Encyclopedia</a></div>
+</div>
+
+	
+>>>>>>> cba5d36b2c50cf650dd7a26c5807f69689c96c5b
 </body>
 </html>
